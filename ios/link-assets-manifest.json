@@ -1,0 +1,61 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-Bold.ttf",
+      "sha1": "725f9514c93b5356230588f805f771d2c8381487"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-BoldItalic.ttf",
+      "sha1": "6c1ef9c92a0d82c0016f39168ea9c233e96ecf05"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-ExtraBold.ttf",
+      "sha1": "8cb31628fea4d444bdc278b04a28bebee5970ce1"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-ExtraBoldItalic.ttf",
+      "sha1": "cfec6eea5b6fa83e0451c58ac8fc7eac8f1b4e49"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-ExtraLight.ttf",
+      "sha1": "f9f31756bd4d62b91c675b028ca29a7b7e41d142"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-ExtraLightItalic.ttf",
+      "sha1": "a0294ea53f5f3fdcd0e89c1c00ff0836fceedec9"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-Italic.ttf",
+      "sha1": "06c2587a342b50874933b0bd3683de1808074d42"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-Light.ttf",
+      "sha1": "7a1f5670abcd008f1fb85acf15cd634fde18ed6c"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-LightItalic.ttf",
+      "sha1": "70e43f6f05f1732ad37684d512465809d9f841ab"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-Medium.ttf",
+      "sha1": "a76cf945a2ffeff98027dfd401b656c6273bff46"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-MediumItalic.ttf",
+      "sha1": "7583e2e7aab761e2b01e12fbadf3c8717b52d89b"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-Regular.ttf",
+      "sha1": "39007600414c4de958463f14eb3f59d775621303"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-SemiBold.ttf",
+      "sha1": "24953bebc61acd5caa5be521dd319772444f8b24"
+    },
+    {
+      "path": "src/assets/fonts/PlusJakartaSans-SemiBoldItalic.ttf",
+      "sha1": "7fe168da847f4b86799b77bab17bb3861107ae7c"
+    }
+  ]
+}
