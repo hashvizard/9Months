@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, Pressable } from 'react-native';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Slide from './Slide'
@@ -9,13 +9,21 @@ import { ArrowRight, X } from 'lucide-react-native';
 import Colors from '../../theme/colors';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import onboardingData from '../../data/onboardingData';
+import { useDispatch } from 'react-redux';
+import { completeOnboarding } from '../../redux/slices/appSlice';
 
 const OnboardingScreen = () => {
   const sliderRef = useRef(null);
 
+  const dispatch = useDispatch();
+
   const insets = useSafeAreaInsets();
 
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleDone = () => {
+    dispatch(completeOnboarding());
+  };
 
   const renderNextButton = () => (
     <View style={styles.next}>
@@ -42,19 +50,21 @@ const OnboardingScreen = () => {
         style={{
           width: '100%',
         }}
+        onPress={handleDone}
       />
     </View>
   );
 
   const renderSkipButton = () => (
-    <View style={styles.skipButton}>
+    <Pressable style={styles.skipButton}
+      onPress={handleDone}>
       <AppText
         variant="body"
         color="#777777"
         style={styles.skipText}>
         Skip
       </AppText>
-    </View>
+    </Pressable>
   );
 
   return (
@@ -69,7 +79,9 @@ const OnboardingScreen = () => {
               top: insets.top + 12,
             },
           ]}>
-          <View style={styles.skipContainer}>
+          <Pressable
+            onPress={handleDone}
+            style={styles.skipContainer}>
             <AppText
               variant="body"
               color={Colors.subtitle}
@@ -83,7 +95,7 @@ const OnboardingScreen = () => {
               style={{ marginTop: 5 }}
               strokeWidth={2.5}
             />
-          </View>
+          </Pressable>
         </View>
       )}
       <AppIntroSlider
