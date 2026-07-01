@@ -7,6 +7,8 @@ import {
 
 import persistConfig from './persistConfig';
 
+
+import signupReducer from './slices/signupSlice';
 import appReducer from './slices/appSlice';
 import authReducer from './slices/authSlice';
 import pregnancyReducer from './slices/pregnancySlice';
@@ -16,6 +18,7 @@ import notificationReducer from './slices/notificationSlice';
 const rootReducer = combineReducers({
   app: appReducer,
   auth: authReducer,
+  signup : signupReducer,
   pregnancy: pregnancyReducer,
   subscription: subscriptionReducer,
   notification: notificationReducer,

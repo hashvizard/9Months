@@ -1,0 +1,4 @@
+export const ULTRASOUND_TYPES = {
+  EDD: 'EDD',
+  GESTATIONAL_AGE: 'GESTATIONAL_AGE',
+};

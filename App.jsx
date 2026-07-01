@@ -7,6 +7,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import RNBootSplash from 'react-native-bootsplash';
 import { store, persistor } from './src/redux/store';
 import RootNavigator from './src/navigation/RootNavigator';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 
 export default function App() {
 
@@ -26,15 +27,17 @@ export default function App() {
         loading={null}
         persistor={persistor}>
         <GestureHandlerRootView style={{ flex: 1 }}>
-          <SafeAreaProvider>
-            <StatusBar
-              translucent={false}
-              backgroundColor="#FFFFFF"
-              barStyle="dark-content"
-            />
+          <BottomSheetModalProvider>
+            <SafeAreaProvider>
+              <StatusBar
+                translucent={false}
+                backgroundColor="#FFFFFF"
+                barStyle="dark-content"
+              />
 
-            <RootNavigator />
-          </SafeAreaProvider>
+              <RootNavigator />
+            </SafeAreaProvider>
+          </BottomSheetModalProvider>
         </GestureHandlerRootView>
       </PersistGate>
     </Provider>

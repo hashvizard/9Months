@@ -6,6 +6,7 @@ const persistConfig = {
   whitelist: [
     'app',
     'auth',
+    // 'signup',
     'pregnancy',
     'subscription',
     'notification',
